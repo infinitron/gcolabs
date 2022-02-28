@@ -27,15 +27,13 @@
       {\normalfont\large}{Chapter \thechapter:}{1em}{}
 
 \usepackage{graphicx}
-\usepackage[margin=0pt,small,labelfont=,textfont=]{caption}
+\usepackage[hang,small,labelfont=,textfont=]{caption}
 %\usepackage{subcaption}
-\captionsetup{compatibility=false}
+%\captionsetup{compatibility=false}
 %\usepackage{caption}
-
-
+\usepackage{subcaption}
 \usepackage{cite}
 \usepackage{lscape}
-\usepackage{aasmacros}
 \usepackage{indentfirst}
 \usepackage{latexsym}
 \usepackage{multirow}
@@ -44,15 +42,17 @@
 \usepackage{slashbox}
 \usepackage{longtable}
 \usepackage{supertabular}
-%\usepackage{subeqn}
-\usepackage{amsmath}
-%\usepackage{subfigure}
-\usepackage{subcaption}
+\usepackage{subeqn}
+\usepackage{subfigure}
 \usepackage{natbib}
 \usepackage[pdftex, bookmarks, colorlinks=true, plainpages=false, citecolor=blue, urlcolor=blue, filecolor=blue, linkcolor=blue]{hyperref} 
 	%Works with PcTex.  You may have to choose one of the drivers above if dvips does not work.
 
 \newcommand{\tbsp}{\rule{0pt}{18pt}} %used to get a vertical distance after \hline
+\newcommand{\mnras}{Monthly Notices of the Royal Astronomical Society}
+\newcommand{\memras}{Memoirs of Monthly Notices of the Royal Astronomical Society}
+\newcommand{\apj}{The Astrophysical Journal}
+\newcommand{\apjl}{The Astrophysical Journal Letters}
 \renewcommand{\baselinestretch}{2}
 \newcommand{\siml}{$\sim$}
 \newcommand{\as}{$^{\prime\prime}$}
@@ -64,7 +64,7 @@
 \setlength{\oddsidemargin}{.55in}
 \setlength{\parindent}{.4in}
 \pagestyle{empty}
-\renewcommand{\floatpagefraction}{.8}%
+
 \begin{document}
 
 \include{Abstract} %(must be first, required, non-numbered)
